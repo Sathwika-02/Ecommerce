@@ -1,0 +1,26 @@
+.custom-width {
+    width: 400px; /* Set the desired width here */
+  }
+
+  .menu{
+    margin-left: 40px;
+    margin-top: 5px;
+  }
+.sidenav-wrapper{
+  position: absolute;
+  top: 60px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #eee;
+}
+
+mat-sidenav{
+  width: 200px;
+  padding: 20px;
+}
+.mat-sidenav-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

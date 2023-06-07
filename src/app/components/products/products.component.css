@@ -1,0 +1,104 @@
+.card-top {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: .25rem;
+}
+
+.item img {
+    width: 98px;
+}
+.item h6{
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.item {
+    margin: 9px 7px;
+    text-align: center;
+}
+
+.item a:hover {
+    color: blue;
+}
+/*
+.card img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+    transition: 0.3s ease-in-out;
+}*/
+/*
+.card img:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+}*/
+
+.card img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 25px;
+    margin-left: 40px;
+    transition:0.3s ease-in-out; 
+}
+.card img:hover{
+    transition:0.3s ease-in-out;
+    transform: scale(1.1);
+}
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 20px;
+    min-width: 0;
+   
+}
+.small-select {
+    margin-top: 10px;
+    width: 150px;
+    margin-left: 1100px;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  h6{
+    cursor: pointer;
+  }
+.slider{
+    width: 20%;
+    margin-right: 15px;
+    background-color: #ddd;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s
+}
+.slider:hover {
+    opacity: 1;
+  }
+  mat-slider{
+    width: 30%;
+  }
+.productslider{
+    position: relative;
+    left:20%;
+}
+p{
+    font-size: 15px;
+}
+.filterbutton{
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.filterbutton:hover{
+    background-color: #45a049;
+}

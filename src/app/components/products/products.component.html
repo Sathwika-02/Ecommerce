@@ -1,0 +1,113 @@
+<div class="card-top container-fluid">
+    <div class="container d-flex">
+        <div class="item">
+            <a (click)="filter('men\'s clothing')">
+                <img src="https://m.media-amazon.com/images/G/31/img23/Fashion/Event/JuneWRS/eventpage/HALOS/Men__unselected._SS300_QL85_FMpng_.png" alt="">
+                <h6>Mens Clothing</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('electronics')">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" alt="">
+                <h6>Electronics</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('footwear')">
+                <img src="https://m.media-amazon.com/images/G/31/img21/shoes/2023/WRS23/Halos/sneakerex._CB587552598_.jpg" alt="">
+                <h6>Footwear</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('women\'s clothing')">
+                <img  src="https://m.media-amazon.com/images/G/31/img23/Fashion/Event/JuneWRS/eventpage/HALOS/Women__unselected._SS300_QL85_FMpng_.png" alt="">
+                <h6>Womens Clothing</h6>
+            </a>
+          
+        </div>
+        <div class="item">
+            <a (click)="filter('watches')">
+                <img src="  https://m.media-amazon.com/images/G/31/img23/Fashion/Event/JuneWRS/eventpage/HALOS/Watches_unselected._SS300_QL85_FMpng_.png" alt="">
+                <h6>Watches</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('books')">
+                <img src="https://media.istockphoto.com/id/509862358/vector/flat-icon-is-a-stack-of-books.jpg?s=1024x1024&w=is&k=20&c=dj5-8W7S5aRe7h-x17bVwDi315D5fOZEbI3LJr0HHQQ=" alt="">
+                <h6>Books</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('luggage')">
+                <img src="https://m.media-amazon.com/images/G/31/img23/Fashion/Event/JuneWRS/eventpage/HALOS/LuggageBags_unselected._SS300_QL85_FMpng_.png" alt="">
+                <h6>Luggage and Bags</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('jewelery')">
+                <img src=" https://m.media-amazon.com/images/G/31/img23/Fashion/Event/JuneWRS/eventpage/HALOS/Jewellery_unselected._SS300_QL85_FMpng_.png" alt="">
+                <h6>Jewellery</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('beauty')">
+                <img src="https://m.media-amazon.com/images/G/31/img23/Fashion/Event/JuneWRS/eventpage/HALOS/Beauty_unselected._SS300_QL85_FMpng_.png" alt="">
+                <h6>Beauty</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('handbags')">
+                <img src="https://m.media-amazon.com/images/G/31/img23/Fashion/Event/JuneWRS/eventpage/HALOS/handbags._SS300_QL85_FMpng_.png" alt="">
+                <h6>Handbags</h6>
+            </a>
+        </div>
+       
+    </div>
+</div>
+<ng-image-slider
+    #nav
+    [images]="imageObject"
+    [infinite]="false"
+    [imageSize]="{width: '1500px', height: 350}"
+    slideImage="1"></ng-image-slider>
+
+
+<select class="form-select small-select" (change)="sort($event)">
+    <option value="asc">Price Low to High</option>
+    <option value="dsc">Price High to Low</option>
+  </select>
+
+<!---
+  <div class="productslider">
+  <input type="range" [min]="minValue" [max]="maxValue" [(ngModel)]="sliderValue"  [step]="100" (input)="onSliderChange($event)" class="slider">
+<button (click)="filterrange()" class="filterbutton">Get products</button>
+<p>Maximum price: {{ sliderValue }}</p>
+</div> -->
+  
+<div class="productslider">
+<mat-slider min="0" max="30000" [step]="100">
+    <input #startInput value="300" matSliderStartThumb (change)="onStartChange(startInput.value)">
+    <input #endInput value="400" matSliderEndThumb (change)="onEndChange(endInput.value)">
+  </mat-slider>
+  <button (click)="filterrange1()" class="filterbutton">Get products</button>
+  <p>Min Price: {{ startValue }}</p>
+  <p>Max Price: {{ endValue }}</p>
+  </div>
+  
+ 
+
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let item of filteredProducts | filter:searchKey:'title'">
+            <div class="card col-md-3">
+                <img src="{{item.image}}" alt="">
+                <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;text-align: center;">{{item.title}}</h5>
+                <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.description}}</p>
+                <p><strong>Price:</strong> {{item.price| currency:'INR'}}</p>
+                <button class="btn btn-primary" (click)="openDialog(item)">Add to cart</button>
+
+            </div>
+        </ng-container>
+
+    </div>
+</div>

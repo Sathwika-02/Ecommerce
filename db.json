@@ -1,0 +1,381 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "productList": [
+    {
+      "id": 1,
+      "title": "Polo Shirt",
+      "price": 595,
+      "description": "Van Heusen Men's Regular Fit Polo Shirt",
+      "category": "men's clothing",
+      "image": "https://m.media-amazon.com/images/I/818niea1luL._UY500_.jpg",
+      "rating": {
+        "rate": 3.9
+      }
+    },
+    {
+      "id": 2,
+      "title": "Mens Shirt ",
+      "price": 225,
+      "description": "Men's Regular Fit Shirt",
+      "category": "men's clothing",
+      "image": "https://m.media-amazon.com/images/I/81bZMk6blqL._UY500_.jpg",
+      "rating": {
+        "rate": 4.1
+      }
+    },
+    {
+      "id": 3,
+      "title": "Mens Formal shirt",
+      "price": 599,
+      "description": "Van Heusen Men's Regular Fit Polo Shirt",
+      "category": "men's clothing",
+      "image": "https://m.media-amazon.com/images/I/8110Z9u3coL._UY500_.jpg",
+      "rating": {
+        "rate": 4.7
+      }
+    },
+    {
+      "id": 4,
+      "title": "Mens Casual Slim Fit",
+      "price": 1599,
+      "description": "Van Heusen Men's Regular Fit Polo Shirt",
+      "category": "men's clothing",
+      "image": "https://m.media-amazon.com/images/I/618xSLrZ6iL._UY500_.jpg",
+      "rating": {
+        "rate": 2.1
+      }
+    },
+    {
+      "id": 5,
+      "title": " Gold & Silver Chain ",
+      "price": 695,
+      "description": "Glod and silver chain bracelet",
+      "category": "jewelery",
+      "image": "https://m.media-amazon.com/images/I/51S4acqv08L._UY535_.jpg",
+      "rating": {
+        "rate": 4.6
+      }
+    },
+    {
+      "id": 6,
+      "title": "Solid Gold Petite Micropave ",
+      "price": 1168,
+      "description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
+      "category": "jewelery",
+      "image": "https://m.media-amazon.com/images/I/51imcTsAW2L._UY535_.jpg",
+      "rating": {
+        "rate": 3.9
+      }
+    },
+    {
+      "id": 7,
+      "title": "White Gold Plated Princess",
+      "price": 999,
+      "description": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
+      "category": "jewelery",
+      "image": "https://m.media-amazon.com/images/I/516qD0+t16L._UY535_.jpg",
+      "rating": {
+        "rate": 3
+      }
+    },
+    {
+      "id": 8,
+      "title": "Pierced Owl Rose Gold Plated Stainless Steel Double",
+      "price": 1099,
+      "description": "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel",
+      "category": "jewelery",
+      "image": "https://m.media-amazon.com/images/I/61gxZw2mP4S._UY535_.jpg",
+      "rating": {
+        "rate": 1.9
+      }
+    },
+    {
+      "id": 9,
+      "title": "External Hard Drive - USB 3.0 ",
+      "price": 64,
+      "description": "2TB Elements Portable External Hard Drive - USB 3.0",
+      "category": "electronics",
+      "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+      "rating": {
+        "rate": 3.3
+      }
+    },
+    {
+      "id": 10,
+      "title": "Internal SSD - SATA III 6 Gb/s",
+      "price": 109,
+      "description": "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
+      "category": "electronics",
+      "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+      "rating": {
+        "rate": 2.9
+      }
+    },
+    {
+      "id": 11,
+      "title": "Silicon Power 256GB SSD 3D ",
+      "price": 109,
+      "description": "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
+      "category": "electronics",
+      "image": "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg",
+      "rating": {
+        "rate": 4.8
+      }
+    },
+    {
+      "id": 12,
+      "title": "4TB Gaming Drive External Hard Drive",
+      "price": 114,
+      "description": "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
+      "category": "electronics",
+      "image": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
+      "rating": {
+        "rate": 4.8
+      }
+    },
+    {
+      "id": 13,
+      "title": "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
+      "price": 599,
+      "description": "21. 5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon free Sync technology. No compatibility for VESA Mount Refresh Rate: 75Hz - Using HDMI port Zero-frame design | ultra-thin | 4ms response time | IPS panel Aspect ratio - 16: 9. Color Supported - 16. 7 million colors. Brightness - 250 nit Tilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree 75 hertz",
+      "category": "electronics",
+      "image": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg",
+      "rating": {
+        "rate": 2.9
+      }
+    },
+    {
+      "id": 14,
+      "title": "Samsung 49-Inch Curved Gaming Monitor",
+      "price": 99999,
+      "description": "Samsung 49-Inch Curved Gaming Monitor",
+      "category": "electronics",
+      "image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+      "rating": {
+        "rate": 2.2
+      }
+    },
+    {
+      "id": 15,
+      "title": " Women's Jacket Winter Coats",
+      "price": 599,
+      "description": "Note:The Jackets is US standard size, Please choose size as your usual wear Material: 100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin Friendly, Lightweigt and Warm.Stand Collar Liner jacket, keep you warm in cold weather. Zippered Pockets: 2 Zippered Hand Pockets, 2 Zippered Pockets on Chest (enough to keep cards or keys)and 1 Hidden Pocket Inside.Zippered Hand Pockets and Hidden Pocket keep your things secure. Humanized Design: Adjustable and Detachable Hood and Adjustable cuff to prevent the wind and water,for a comfortable fit. 3 in 1 Detachable Design provide more convenience, you can separate the coat and inner as needed, or wear it together. It is suitable for different season and help you adapt to different climates",
+      "category": "women's clothing",
+      "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
+      "rating": {
+        "rate": 2.6
+      }
+    },
+    {
+      "id": 16,
+      "title": "Womens Moto Biker Jacket",
+      "price": 2995,
+      "description": "100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort / 2 pockets of front, 2-For-One Hooded denim style faux leather jacket, Button detail on waist / Detail stitching at sides, HAND WASH ONLY / DO NOT BLEACH / LINE DRY / DO NOT IRON",
+      "category": "women's clothing",
+      "image": "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
+      "rating": {
+        "rate": 2.9
+      }
+    },
+    {
+      "id": 17,
+      "title": "Womens one piece",
+      "price": 3999,
+      "description": "Lightweight perfet for trip or casual wear---Long sleeve with hooded, adjustable drawstring waist design. Button and zipper front closure raincoat, fully stripes Lined and The Raincoat has 2 side pockets are a good size to hold all kinds of things, it covers the hips, and the hood is generous but doesn't overdo it.Attached Cotton Lined Hood with Adjustable Drawstrings give it a real styled look.",
+      "category": "women's clothing",
+      "image": "https://n3.sdlcdn.com/imgs/k/n/d/Fabflee-Pink-Chiffon-Women-s-SDL469077225-1-f590b.jpg",
+      "rating": {
+        "rate": 3.8
+      }
+    },
+    {
+      "id": 18,
+      "title": "Women's white top",
+      "price": 999,
+      "description": "95% RAYON 5% SPANDEX, Made in USA or Imported, Do Not Bleach, Lightweight fabric with great stretch for comfort, Ribbed on sleeves and neckline / Double stitching on bottom hem",
+      "category": "women's clothing",
+      "image": "https://m.media-amazon.com/images/I/71ocRlvxItL._UY741_.jpg",
+      "rating": {
+        "rate": 4.7
+      }
+    },
+    {
+      "id": 19,
+      "title": "Women's Kurthi with dupatta",
+      "price": 795,
+      "description": "100% Polyester, Machine wash, 100% cationic polyester interlock, Machine Wash & Pre Shrunk for a Great Fit, Lightweight, roomy and highly breathable with moisture wicking fabric which helps to keep moisture away, Soft Lightweight Fabric with comfortable V-neck collar and a slimmer fit, delivers a sleek, more feminine silhouette and Added Comfort",
+      "category": "women's clothing",
+      "image": "https://m.media-amazon.com/images/I/61Kp-+0GrHL._UY741_.jpg",
+      "rating": {
+        "rate": 4.5
+      }
+    },
+    {
+      "id": 20,
+      "title": " Womens white kurta",
+      "price": 599,
+      "description": "95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees, The fabric is soft and has some stretch., Occasion: Casual/Office/Beach/School/Home/Street. Season: Spring,Summer,Autumn,Winter.",
+      "category": "women's clothing",
+      "image": "https://m.media-amazon.com/images/I/51dZ19miAbL._UY741_.jpg",
+      "rating": {
+        "rate": 3.6
+      }
+    },
+    {
+      "id": 21,
+      "title": "MyGlamm Lipstick",
+      "price": 1299,
+      "description": "MyGlamm Presents Beauty Hi-Shine Lipstick, Glossy Finish - Desert Suede, 4gm",
+      "category": "beauty",
+      "image": "https://m.media-amazon.com/images/I/41T9az14W2L._SX425_.jpg",
+      "rating": {
+        "rate": 3.9
+      }
+    },
+    {
+      "id": 22,
+      "title": "Maybelline New York Mascara",
+      "price": 899,
+      "description": "Maybelline New York Mascara, No-clumping, Fanning Brush, Waterproof, Lash Sensational, Black, 9ml",
+      "category": "beauty",
+      "image": "https://m.media-amazon.com/images/I/316hu2jEBVL._SX300_SY300_QL70_FMwebp_.jpg",
+      "rating": {
+        "rate": 3.6
+      }
+    },
+    {
+      "id": 23,
+      "title": "Brief History of Time",
+      "price": 899,
+      "description": "Brief History of Time is a book written by Stephen Hawking",
+      "category": "books",
+      "image": "https://m.media-amazon.com/images/I/51SWYYvk+KL._SY344_BO1,204,203,200_.jpg",
+      "rating": {
+        "rate": 3.6
+      }
+    },
+    {
+      "id": 24,
+      "title": "Miracles of your mind",
+      "price": 1299,
+      "description": "95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees, The fabric is soft and has some stretch., Occasion: Casual/Office/Beach/School/Home/Street. Season: Spring,Summer,Autumn,Winter.",
+      "category": "books",
+      "image": "https://m.media-amazon.com/images/I/51Iyn6mQEwL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg",
+      "rating": {
+        "rate": 3.6
+      }
+    },
+    {
+      "id": 25,
+      "title": "Rich Dad Poor Dad",
+      "price": 1299,
+      "description": "Rich Dad Poor Dad written by robert",
+      "category": "books",
+      "image": "https://m.media-amazon.com/images/I/51Hfv2MfNGL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg",
+      "rating": {
+        "rate": 3.6
+      }
+    },
+    {
+      "id": 26,
+      "title": "Angelas Ashes",
+      "price": 999,
+      "description": "95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees, The fabric is soft and has some stretch., Occasion: Casual/Office/Beach/School/Home/Street. Season: Spring,Summer,Autumn,Winter.",
+      "category": "books",
+      "image": "https://m.media-amazon.com/images/I/41xr0taO8GL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg",
+      "rating": {
+        "rate": 3.6
+      }
+    },
+    {
+      "id": 27,
+      "title": "Paragon",
+      "price": 999,
+      "description": "Paragon Footwear Everyday Comfort Lightweight, Flops for Men with Printed Patterns and Extra Sole Support | Casual Everyday Flip Flops for Men",
+      "category": "footwear",
+      "image": "https://m.media-amazon.com/images/I/71q2HCWS0NL._UY535_.jpg",
+      "rating": {
+        "rate": 3.6
+      }
+    },
+    {
+      "id": 28,
+      "title": "Mochi",
+      "price": 1299,
+      "description": "Mochi womens synthetic slippers",
+      "category": "footwear",
+      "image": "https://m.media-amazon.com/images/I/61L5QNp7I-L._UY625_.jpg",
+      "rating": {
+        "rate": 3.6
+      }
+    },
+    {
+      "id": 29,
+      "title": "Amber Slippers",
+      "price": 899,
+      "description": "BATA girls Amber Slippers",
+      "category": "footwear",
+      "image": "https://m.media-amazon.com/images/I/71qJ9FRUWIL._UX625_.jpg",
+      "rating": {
+        "rate": 3.6
+      }
+    },
+    {
+      "id": 30,
+      "title": "Trolley Bags",
+      "price": 26499,
+      "description": "Urban Jungle Trolley Bags for Travel Set of 3, Small, Medium & Large Suitcase (55cm, 65cm & 75cm), Olive Cabin and Check-in Luggage with 8 Wheels & TSA Lock (Matcha Green)",
+      "category": "luggage",
+      "image": "https://m.media-amazon.com/images/I/61794JdGNwL._SX679_.jpg",
+      "rating": {
+        "rate": 3.6
+      }
+    },
+    {
+      "id": 31,
+      "title": "Fastrack",
+      "price": 795,
+      "description": "FastTrack Analog Mens watch",
+      "category": "watches",
+      "image": "https://m.media-amazon.com/images/I/51Q78fz0SGL._UX466_.jpg",
+      "rating": {
+        "rate": 3.6
+      }
+    },
+    {
+      "id": 32,
+      "title": "Beclina Handbags",
+      "price": 795,
+      "description": "Beclina Handbag For Women And Girls | Ladies Purse Faux Leather Handbag | Woman Gifts | Wedding Gifts For Woman | Women 3 Compartment Bags | Travel Purse Handbag",
+      "category": "handbags",
+      "image": "https://m.media-amazon.com/images/I/516+MHVhWIL.jpg",
+      "rating": {
+        "rate": 3.6
+      }
+    }
+  ],
+  "signupUsers": [
+    {
+      "firstName": "sathwika",
+      "lastName": "m",
+      "userName": "sathwika",
+      "email": "madarapusathwika9@gmail.com",
+      "password": "sathwika",
+      "id": 1
+    },
+    {
+      "firstName": "saketh",
+      "lastName": "m",
+      "userName": "saketh",
+      "email": "saketh@gmail.com",
+      "password": "$2a$10$C6CI1NdTUb8Ogklpb7m7vuQx/A7c8tOFZRA0jTUAROjcFIoAA6eNi",
+      "id": 2
+    }
+  ]
+}
