@@ -1,4 +1,4 @@
-<ng-container *ngIf="products.length >0">
+<!--<ng-container *ngIf="products.length >0">
     <div class="cart" *ngFor="let item of products; let i=index">
       <i class="fa fa-trash" aria-hidden="true" (click)="removeItem(item)"></i>
       <div class="imgBox">
@@ -18,84 +18,80 @@
       <button class="btn btn-success">Checkout</button>
     </div>
   </ng-container>
-  
-
-<!--<ng-container *ngIf="products.length >0">
-    <div class="cart" *ngFor="let item of products;let i=index">
-
-        <i class="fa fa-trash" aria-hidden="true" (click)="removeItem(item)"></i>
-        <div class="imgBox">
-            <img src="{{item.image}}" alt="" class="img">
-        </div>
-        <div class="title">{{item.title}}</div>
-        <div class="price">{{item.price | currency:'INR'}}</div>
-        <div class="qty">
-            <button class="btn-minus" (click)="minus(item.data)"><i class="fa fa-minus"></i></button>
-            <input type="text" value="{{item.qty}}">
-            <button class="btn-plus" (click)="plus(item.data)"><i class="fa fa-plus"></i></button>
-        </div>
-    </div>
-
-    <div class="checkout">
-        <div>Subtotal</div>
-        <b>{{0 | currency:'INR'}}</b>
-        <div>Shipping</div>
-        <b>{{0 | currency:'INR'}}</b>
-        <div>Total</div>
-       <b>{{total|currency:'INR'}}</b>
-        <button class="btn btn-success">Checkout</button>
-    </div>
-</ng-container>
+-->
 
 
-<ng-container *ngIf="products.length !=0">
-    <div class="container">
-        <div class="card-table">
-            <div class="cart-product">
-                <table class="table table-responsive">
-                    <thead>
-                        <tr>
-                            <th>Sr.No</th>
-                            <th>Product Name</th>
-                            <th>Product Image</th>
-                            <th>Price</th>
-                            <th>Quantity</th>
-                            <th>Total</th>
-                            <th>Subtotal</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr *ngFor="let item of products; let i = index">
-                            <td>{{i+1}}</td>
-                            <td>{{item.title}}</td>
-                            <td><img style="width: 120px;" src="{{item.image}}" alt=""></td>
-                            <th style="width: 12%;">{{item.price | currency:'INR'}}</th>
-                            <td style="width: 12%;">{{item.quantity}}</td>
-                            <td style="width: 12%;">{{item.total}}</td>
-                            <td style="width:12%"> {{item.subtotal}}</td>
-                            <td>
-                                <button (click)="removeItem(item)" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="4"></td>
-                            <td><button (click)="emptycart()" class="btn btn-danger">Empty Cart</button></td>
-                            <td><button routerLink="/products" class="btn btn-primary">Shop More</button></td>
-                            <td><button class="btn btn-success">Proceed to Checkout</button></td>
-                            <td><strong>Grand Total : {{grandTotal | currency:'INR'}}</strong></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-</ng-container>-->
-
-
-<ng-container *ngIf="products.length ==0">
+<ng-container *ngIf="cartItems.length==0">
     <div class="info">
         <h4>You don't have any items in your cart</h4>
         <a routerLink="/product" class="btn btn-success">Start Shopping</a>
         
     </div>
 </ng-container>
+
+<div class="small-container cart-page" *ngIf="cartItems.length>0">
+    <div class="section-content section-content-p30">
+        <div class="container-fluid">
+            <table class="table table-bordered" border="1">
+                <tr style="background-color: lightblue;">
+                    <th width="30%">Product Image</th>
+                    <th width="25%">Product Details</th>
+                    <th width="25%">Quantity</th>
+                    <th width="20%">Subtotal</th>
+                </tr>
+                <tr *ngFor="let temp of cartItems">
+                    <td>
+                        <img src="{{temp.imageUrl}}" class="img-responsive" width="150px">
+                    </td>
+                    <td>
+                        <p>{{temp.name}}</p>
+                        <p> Price: {{temp.unitPrice | currency:'INR'}}</p>
+                    </td>
+                    <td>
+                       
+                        <div class="items">
+                            <label>Quantity:</label>
+                            <div class="row no-gutters">
+                              <div class="col">
+                                <button (click)="increment(temp)" class="btn btn-primary btn-sm">
+                                  <i class="fas fa-plus"></i>
+                                </button>
+                              </div>
+                              <div class="col ml-2 mr-2">
+                                <span class="quantity">{{ temp.quantity }}</span>
+                              </div>
+                              <div class="col">
+                                <button (click)="decrement(temp)" class="btn btn-primary btn-sm">
+                                  <i class="fas fa-minus"></i>
+                                </button>
+                              </div>
+                              </div>
+                              <div class="col">
+                                <button (click)="remove(temp)" class="btn btn-danger btn-sm">Remove</button>
+                              </div>
+                            
+                          </div>
+                          </td>
+                          <td>
+                          
+                        
+                        <p class="mt-2">Subtotal:{{temp.quantity *temp.unitPrice | currency:'INR'}}</p>
+                    </td>
+                </tr>
+
+                <tr>
+
+                    <td colspan="3"></td>
+                    <td style="font-weight: bold;">
+                    <p>Total Quantity:{{totalQuantity}}</p>
+                    <p>Shipping:Free</p>
+                    <p>Total Price:{{totalPrice | currency:'INR'}}</p>
+                  <p> <a routerLink="/checkout" class="btn btn-primary" (click)="check(cartItems)">Checkout</a></p>
+                </td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+</div>
+
