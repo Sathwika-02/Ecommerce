@@ -11,6 +11,7 @@ import { ApiService } from 'src/app/services/api.service';
 
 export class ShippingComponent {
  addressForm!: FormGroup;
+  customerName: string='';
 
   constructor(private formBuilder: FormBuilder,private http:HttpClient,private apiService:ApiService) {}
 
@@ -34,8 +35,12 @@ export class ShippingComponent {
         console.log(`customerName in getOrderedProd is: ${customerName}`);
       }
     });
-    
-      const addressData = this.addressForm.value;
+    if (this.addressForm.valid) {
+      const addressData = {
+        ...this.addressForm.value,
+        customerName: this.customerName
+      };
+     
       console.log(addressData);
       this.http.post('http://127.0.0.1:8000/addresses/', addressData)
         .subscribe(
@@ -51,6 +56,7 @@ export class ShippingComponent {
     } else {
       
     }
-  }
 
+}
+  }
 }
